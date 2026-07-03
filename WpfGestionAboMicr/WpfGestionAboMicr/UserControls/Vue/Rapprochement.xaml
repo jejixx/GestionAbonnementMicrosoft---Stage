@@ -1,0 +1,174 @@
+﻿<UserControl x:Class="WpfGestionAboMicr.UserControls.Vue.Rapprochement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             Background="#F3F4F6">
+
+    <DockPanel Margin="12" LastChildFill="True">
+
+        <!-- Barre du haut -->
+        <Border DockPanel.Dock="Top"
+                Background="White"
+                BorderBrush="#E5E7EB"
+                BorderThickness="1"
+                CornerRadius="8"
+                Padding="12"
+                Margin="0,0,0,10">
+            <DockPanel LastChildFill="False">
+
+                <TextBlock Text="Rapprochement fournisseur / client"
+                           FontSize="18"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center"
+                           DockPanel.Dock="Left"/>
+
+                <StackPanel Orientation="Horizontal"
+                            DockPanel.Dock="Right"
+                            VerticalAlignment="Center">
+                    
+                    <TextBox x:Name="TxtRecherche"
+                             Width="220"
+                             Height="30"
+                             Padding="8,0"
+                             Margin="0,0,8,0"
+                             VerticalContentAlignment="Center"
+                             TextChanged="TxtRecherche_TextChanged"/>
+
+
+                    <Button x:Name="BtnExporter"
+                            Content="📤 Exporter"
+                            Padding="12,6"
+                            Margin="0,0,8,0"
+                            Background="#0F766E"
+                            Foreground="White"
+                            BorderThickness="0"
+                            Click="BtnExporter_Click"/>
+                    
+                    <Button x:Name="BtnActualiser"
+                            Content="↺ Actualiser"
+                            Padding="12,6"
+                            Margin="0,0,8,0"
+                            Background="#6B7280"
+                            Foreground="White"
+                            BorderThickness="0"
+                            Click="BtnActualiser_Click"/>
+
+
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+        <!-- Détail en bas -->
+        <Border DockPanel.Dock="Bottom"
+                Background="White"
+                BorderBrush="#E5E7EB"
+                BorderThickness="1"
+                CornerRadius="8"
+                Padding="12"
+                Margin="0,10,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0"
+                           Text="Détail rapprochement"
+                           FontSize="15"
+                           FontWeight="SemiBold"
+                           Foreground="#111827"/>
+
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="Client" Foreground="#6B7280" Margin="0,0,0,4"/>
+                        <TextBox x:Name="TxtClient" IsReadOnly="True" Height="30"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2">
+                        <TextBlock Text="Période" Foreground="#6B7280" Margin="0,0,0,4"/>
+                        <TextBox x:Name="TxtPeriode" IsReadOnly="True" Height="30"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="4">
+                        <TextBlock Text="Écart" Foreground="#6B7280" Margin="0,0,0,4"/>
+                        <TextBox x:Name="TxtEcart" IsReadOnly="True" Height="30"/>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="Facture fournisseur" Foreground="#6B7280" Margin="0,0,0,4"/>
+                        <TextBox x:Name="TxtFactureFournisseur" IsReadOnly="True" Height="30"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2">
+                        <TextBlock Text="Montant fournisseur" Foreground="#6B7280" Margin="0,0,0,4"/>
+                        <TextBox x:Name="TxtMontantFournisseur" IsReadOnly="True" Height="30"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="4">
+                        <TextBlock Text="Facture client" Foreground="#6B7280" Margin="0,0,0,4"/>
+                        <TextBox x:Name="TxtFactureClient" IsReadOnly="True" Height="30"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="6">
+                        <TextBlock Text="Écart %" Foreground="#6B7280" Margin="0,0,0,4"/>
+                        <TextBox x:Name="TxtEcartPourcent" IsReadOnly="True" Height="30"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <!-- Tableau principal -->
+        <Border Background="White"
+                BorderBrush="#E5E7EB"
+                BorderThickness="1"
+                CornerRadius="8"
+                Padding="10">
+            <syncfusion:SfDataGrid x:Name="GridRapprochements"
+                       AutoGenerateColumns="False"
+                       SelectionMode="Single"
+                       NavigationMode="Row"
+                       ColumnSizer="Star"
+                       HeaderRowHeight="34"
+                       RowHeight="32"
+
+                       SelectionChanged="GridRapprochements_SelectionChanged">
+
+                <syncfusion:SfDataGrid.Columns>
+                    <syncfusion:GridTextColumn MappingName="Date" HeaderText="Date"/>
+                    <syncfusion:GridTextColumn MappingName="Client" HeaderText="Client"/>
+                    <syncfusion:GridTextColumn MappingName="FactureFournisseur" HeaderText="Facture fournisseur"/>
+                    <syncfusion:GridTextColumn MappingName="MontantFournisseur" HeaderText="Montant fournisseur"/>
+                    <syncfusion:GridTextColumn MappingName="FactureClient" HeaderText="Facture client"/>
+                    <syncfusion:GridTextColumn MappingName="MontantClient" HeaderText="Montant client"/>
+                    <syncfusion:GridTextColumn MappingName="Ecart" HeaderText="Écart"/>
+                    <syncfusion:GridTextColumn MappingName="EcartPourcent" HeaderText="Écart %"/>
+                    <syncfusion:GridTextColumn MappingName="Statut" HeaderText="Statut"/>
+                </syncfusion:SfDataGrid.Columns>
+            </syncfusion:SfDataGrid>
+        </Border>
+
+    </DockPanel>
+</UserControl>
