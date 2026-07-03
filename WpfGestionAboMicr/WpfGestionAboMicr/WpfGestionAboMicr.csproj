@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\admin.png" />
+    <None Remove="Resources\clientAbonnements.png" />
+    <None Remove="Resources\clients.png" />
+    <None Remove="Resources\clientsAbonnements.png" />
+    <None Remove="Resources\deconnexion.png" />
+    <None Remove="Resources\facturation.png" />
+    <None Remove="Resources\rapprochement.png" />
+    <None Remove="Resources\renouvellement.png" />
+    <None Remove="Resources\tableauDeBord.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Data.WPF" Version="33.2.10" />
+    <PackageReference Include="Syncfusion.SfGrid.WPF" Version="33.2.10" />
+    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="33.2.12" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="33.2.12" />
+    <PackageReference Include="Syncfusion.UI.WPF.NET" Version="33.2.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GestionAboMicroService\GestionAboMicroService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\admin.png" />
+    <Resource Include="Resources\clientAbonnements.png" />
+    <Resource Include="Resources\clients.png" />
+    <Resource Include="Resources\clientsAbonnements.png" />
+    <Resource Include="Resources\deconnexion.png" />
+    <Resource Include="Resources\facturation.png" />
+    <Resource Include="Resources\rapprochement.png" />
+    <Resource Include="Resources\renouvellement.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\tableauDeBord.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resource1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

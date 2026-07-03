@@ -1,0 +1,11 @@
+C:\Users\stagiaire\source\repos\WpfGestionAboMicr\GestionAboMicroService\bin\Release\net10.0\GestionAboMicroService.deps.json
+C:\Users\stagiaire\source\repos\WpfGestionAboMicr\GestionAboMicroService\bin\Release\net10.0\GestionAboMicroService.dll
+C:\Users\stagiaire\source\repos\WpfGestionAboMicr\GestionAboMicroService\bin\Release\net10.0\GestionAboMicroService.pdb
+C:\Users\stagiaire\source\repos\WpfGestionAboMicr\GestionAboMicroService\obj\Release\net10.0\GestionAboMicroService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stagiaire\source\repos\WpfGestionAboMicr\GestionAboMicroService\obj\Release\net10.0\GestionAboMicroService.AssemblyInfoInputs.cache
+C:\Users\stagiaire\source\repos\WpfGestionAboMicr\GestionAboMicroService\obj\Release\net10.0\GestionAboMicroService.AssemblyInfo.cs
+C:\Users\stagiaire\source\repos\WpfGestionAboMicr\GestionAboMicroService\obj\Release\net10.0\GestionAboMicroService.csproj.CoreCompileInputs.cache
+C:\Users\stagiaire\source\repos\WpfGestionAboMicr\GestionAboMicroService\obj\Release\net10.0\GestionAboMicroService.dll
+C:\Users\stagiaire\source\repos\WpfGestionAboMicr\GestionAboMicroService\obj\Release\net10.0\refint\GestionAboMicroService.dll
+C:\Users\stagiaire\source\repos\WpfGestionAboMicr\GestionAboMicroService\obj\Release\net10.0\GestionAboMicroService.pdb
+C:\Users\stagiaire\source\repos\WpfGestionAboMicr\GestionAboMicroService\obj\Release\net10.0\ref\GestionAboMicroService.dll

@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="WpfGestionAboMicr.UserControls.DataCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Name="Root">
+
+    <Border Background="White"
+            BorderBrush="#E0E0E0"
+            BorderThickness="{Binding BordureEpaisseur, ElementName=Root}"
+            CornerRadius="10"
+            Margin="0,14,0,0"
+            Padding="20,10,20,10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Indicateur haut droite -->
+            <TextBlock Grid.Row="0"
+                       Text="{Binding Indicateur, ElementName=Root}"
+                       Foreground="{Binding CouleurIndicateur, ElementName=Root}"
+                       FontSize="10"
+                       HorizontalAlignment="Right"/>
+
+            <!-- Icône + Valeur -->
+            <StackPanel Grid.Row="1" Orientation="Horizontal"
+                        VerticalAlignment="Center" Margin="0,6,0,6">
+                <Rectangle Width="30" Height="30"
+                           Margin="0,0,12,0"
+                           VerticalAlignment="Center">
+                    <Rectangle.Fill>
+                        <SolidColorBrush Color="{Binding CouleurIcone, ElementName=Root}"/>
+                    </Rectangle.Fill>
+                    <Rectangle.OpacityMask>
+                        <ImageBrush ImageSource="{Binding IconeSource, ElementName=Root}"
+                                    Stretch="Uniform"/>
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+                <TextBlock Text="{Binding Valeur, ElementName=Root}"
+                           FontSize="34"
+                           FontWeight="Bold"
+                           Foreground="#1A1A1A"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <!-- Label -->
+            <TextBlock Grid.Row="2"
+                       Text="{Binding Label, ElementName=Root}"
+                       Foreground="#707070"
+                       FontSize="12"/>
+        </Grid>
+    </Border>
+</UserControl>

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ktlsdWWY5Ac=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\stagiaire\\source\\repos\\WpfGestionAboMicr\\WpfGestionAboMicr\\WpfGestionAboMicr.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stagiaire\\.nuget\\packages\\syncfusion.data.wpf\\33.2.10\\syncfusion.data.wpf.33.2.10.nupkg.sha512",
+    "C:\\Users\\stagiaire\\.nuget\\packages\\syncfusion.licensing\\33.2.12\\syncfusion.licensing.33.2.12.nupkg.sha512",
+    "C:\\Users\\stagiaire\\.nuget\\packages\\syncfusion.sfgrid.wpf\\33.2.10\\syncfusion.sfgrid.wpf.33.2.10.nupkg.sha512",
+    "C:\\Users\\stagiaire\\.nuget\\packages\\syncfusion.sfskinmanager.wpf\\33.2.12\\syncfusion.sfskinmanager.wpf.33.2.12.nupkg.sha512",
+    "C:\\Users\\stagiaire\\.nuget\\packages\\syncfusion.shared.wpf\\33.2.12\\syncfusion.shared.wpf.33.2.12.nupkg.sha512",
+    "C:\\Users\\stagiaire\\.nuget\\packages\\syncfusion.ui.wpf.net\\33.2.12\\syncfusion.ui.wpf.net.33.2.12.nupkg.sha512"
+  ],
+  "logs": []
+}

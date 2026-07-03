@@ -1,0 +1,38 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\stagiaire\\source\\repos\\ApiLicensing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1774ACCE-8896-2084-AF46-49A9AB38CA7F}|ApiLicensing.csproj|c:\\users\\stagiaire\\source\\repos\\apilicensing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1774ACCE-8896-2084-AF46-49A9AB38CA7F}|ApiLicensing.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 137,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\stagiaire\\source\\repos\\ApiLicensing\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\stagiaire\\source\\repos\\ApiLicensing\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T07:49:01.284Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
