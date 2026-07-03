@@ -81,7 +81,7 @@ L'API utilise des **données en mémoire** pour simulation :
 
 | Environnement | URL | Détails |
 |---|---|---|
-| **Développement** | `https://localhost:5001` | OpenAPI Scalar disponible |
+| **Développement** | `https://localhost:7085` | OpenAPI Scalar disponible |
 | **Documentation API** | `/openapi/v1.json` | Schéma OpenAPI 3.0 |
 | **Interface Swagger/Scalar** | `/scalar` | UI interactive (dev uniquement) |
 
@@ -255,7 +255,7 @@ cd ApiLicensing
 dotnet restore
 dotnet run
 ```
-✅ API disponible à `https://localhost:5001`
+✅ API disponible à `https://localhost:7085`
 
 #### 3️⃣ Lancer le client WPF
 ```bash
@@ -264,7 +264,7 @@ cd WpfGestionAboMicr
 ```
 
 #### 4️⃣ Accéder à la documentation
-- 📖 OpenAPI Scalar : `https://localhost:5001/scalar`
+- 📖 OpenAPI Scalar : `https://localhost:7085/scalar`
 - 🔍 Explorer les endpoints disponibles
 
 ---
@@ -378,7 +378,7 @@ Statuts : `Actif`, `Expiré`, `EnAttente`
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "scalar",
-      "applicationUrl": "https://localhost:5001",
+      "applicationUrl": "https://localhost:7085",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -449,13 +449,13 @@ Utilisez `/api/test/*` pour valider la connexion API.
 
 ```bash
 # Test de base
-curl https://localhost:5001/api/test/ok
+curl https://localhost:7085/api/test/ok
 
 # Test avec récupération de clients
-curl https://localhost:5001/api/clients
+curl https://localhost:7085/api/clients
 
 # Test de création (POST)
-curl -X POST https://localhost:5001/api/clients \
+curl -X POST https://localhost:7085/api/clients \
   -H "Content-Type: application/json" \
   -d '{"nom":"Nouveau Client","email":"nouveau@test.com"}'
 ```
@@ -488,8 +488,8 @@ curl -X POST https://localhost:5001/api/clients \
 
 ## 📞 Support & Documentation
 
-- 📖 **OpenAPI** : `https://localhost:5001/scalar`
-- 🔍 **Schéma** : `https://localhost:5001/openapi/v1.json`
+- 📖 **OpenAPI** : `https://localhost:7085/scalar`
+- 🔍 **Schéma** : `https://localhost:7085/openapi/v1.json`
 - 💬 Consulter le **code source** pour détails supplémentaires
 
 ---
