@@ -1,0 +1,80 @@
+# ===========================
+# Fichiers de build / résultats
+# ===========================
+bin/
+obj/
+[Bb]uild/
+*.exe
+*.dll
+*.pdb
+*.visualstate
+*.log
+
+# ===========================
+# Visual Studio / Rider
+# ===========================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vspscc
+*.vssscc
+*.resharper
+*.DotSettings.user
+*.sln.ide
+*.TestResult.xml
+TestResults/
+
+# ===========================
+# Fichiers de profiling / analyse
+# ===========================
+*.profiler
+*.coverage
+*.coveragexml
+*.nunit
+*.trx
+
+# ===========================
+# Fichiers de configuration locaux (à adapter si tu as des secrets)
+# ===========================
+appsettings.local.json
+appsettings.*.local.json
+Web.config.local
+*.pfx
+*.key
+*.publishsettings
+
+# ===========================
+# Nœud modules / frontend (si tu as du JS/TS dans ton API)
+# ===========================
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+
+# ===========================
+# Fichiers temporaires / OS
+# ===========================
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ===========================
+# Packages NuGet restore (optionnel, si tu veux pas les garder)
+# ===========================
+# packages/
+
+# ===========================
+# Entity Framework / Migrations (optionnel selon ton besoin)
+# ===========================
+# Migrations/*.Designer.cs
+
+# ===========================
+# Docker / conteneur (si utilisé)
+# ===========================
+.docker/
+*.dockerfile.local
